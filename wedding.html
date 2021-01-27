@@ -359,6 +359,16 @@
         });
 
         $(document).ready(function () {
+
+            $('#photos .owl-carousel').owlCarousel({
+                loop: true,
+                dots: false,
+                items: 1,
+                thumbs: true,
+                thumbImage: true,
+                thumbContainerClass: 'owl-thumbs',
+                thumbItemClass: 'owl-thumb-item'
+            });
             //
             (function (e) {
                 e.fn.countdown = function (t, n) {

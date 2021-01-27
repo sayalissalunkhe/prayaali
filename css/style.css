@@ -1,8 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
     font-family: 'Gobold Regular';
-    src: url('/fonts/Gobold\ Regular.otf');
+    src: url('../fonts/gobold\ extra1.ttf');
 }
 
-body{
-    font-family: 'Gobold Regular';
+body {
+    /* font-family: 'Gobold Regular'; */
+    font-family: 'Barlow Condensed', sans-serif !important;
+    background: url(../img/footer-bg.jpg) no-repeat scroll center bottom transparent;
+    background-size: 100%;
+    font-family: georgia;
+    padding-bottom: 650px;
+}
+
+.navigation-list {
+    font-size: 20px;
+    color: #000;
+}
+
+.navbar-light .navigation-list .navbar-nav .nav-link {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.hearts-icon {
+    padding: 10px 30px;
+}
+
+.hearts-underline span {
+    position: relative;
+    display: inline-block;
+}
+
+.hearts-underline span:before,
+.hearts-underline span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    z-index: 1;
+}
+
+.hearts-underline span:before {
+    left: 0;
+}
+
+.hearts-underline span:after {
+    right: 0;
+}
+
+.hearts-underline .hearts-icon {
+    padding: 0 50px;
+}
+
+.section-heading>h3 {
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+#banner {
+    background-image: url(../img/banner-bg.jpg);
+    background-size: 100% auto;
+    margin-bottom: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    color: #fff;
+    background-color: #00000054;
+    border-radius: 5px;
+}
+
+.banner-content h1 {
+    font-size: 70px;
+}
+
+.banner-content p {
+    font-size: 24px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #f2f1ed;
+}
+
+.wrap {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 310px;
+}
+
+/* a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+h1 {
+    margin-bottom: 60px;
+    text-align: center;
+    font: 300 2.25em "Lato";
+    text-transform: uppercase;
+}
+
+h1 strong {
+    font-weight: 400;
+    color: #ea4c4c;
+}
+
+h2 {
+    margin-bottom: 80px;
+    text-align: center;
+    font: 300 0.7em "Lato";
+    text-transform: uppercase;
+}
+
+h2 strong {
+    font-weight: 400;
+} */
+section p.numbers {
+    font-size: 3em;
+}
+
+section p.meta,
+section p.strings {
+    font-size: 1.5em;
+}
+
+section h1 {
+    font-size: 4.5em;
+}
+
+/* countdown styles */
+
+div#countdown {
+    color: #353535;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+div#countdown p {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+p.numbers {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+p.strings {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background: #FF5722;
+    color: #FFFFFF;
+}
+
+div.cd-box {
+    width: 20%;
+    height: auto;
+    background: #FFFFFF;
+    float: left;
+    padding: 0;
+    margin: 0;
+    -webkit-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    -moz-box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+    box-shadow: 5px 6px 9px 1px rgba(53, 53, 53, 0.5);
+}
+
+
+.owl-theme .owl-dots .owl-dot:focus {
+    outline: none;
+}
+
+.owl-dots {
+    counter-reset: dots;
+}
+
+.owl-dot span:before {
+    counter-increment: dots;
+    content: counter(dots);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: url(../img/bg-nav-circles.png) no-repeat scroll 0 0 transparent !important;
+    color: #2e2e2e;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    font-family: 'KnockoutHTF49-Liteweight';
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    width: 20px;
+}
+
+#photos .owl-thumbs {
+    margin-top: 1rem;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    display: flex;
+    gap: 0 10px;
+}
+
+/* width */
+#photos .owl-thumbs::-webkit-scrollbar {
+    height: 5px;
+    border-radius: 10px;
+}
+
+/* Track */
+#photos .owl-thumbs::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+#photos .owl-thumbs::-webkit-scrollbar-thumb {
+    background: #40b7a0;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#photos .owl-thumbs::-webkit-scrollbar-thumb:hover {
+    background: #40b7a0;
+}
+
+#photos button.owl-thumb-item {
+    border: none;
+}
+
+#photos button.owl-thumb-item img {
+    width: 200px;
+    height: auto;
+}
+
+#photos .owl-carousel.owl-theme .owl-dots .owl-dot.active span,
+#groomsmen .owl-carousel.owl-theme .owl-dots .owl-dot.active span,
+#groomsmen .owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+    background-position: 0 -20px !important;
+    color: #ffffff;
+}
+
+#bridemaid .owl-carousel.owl-theme .owl-dots .owl-dot.active span,
+#bridemaid .owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+    background-position: 0 -40px !important;
+    color: #ffffff;
+}
+
+#groomsmen .owl-carousel .person .name,
+#bridemaid .owl-carousel .person .name {
+    color: #000;
+    font-size: 34px;
+    font-style: italic;
+    margin: 0 0 5px;
+}
+
+#groomsmen .owl-carousel .person .title,
+#bridemaid .owl-carousel .person .title {
+    color: #000;
+    font-size: 20px;
+}
+
+#groomsmen .owl-carousel .person .bio,
+#bridemaid .owl-carousel .person .bio {
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 30px 0 15px;
+}
+
+.box1-top {
+    background: url(../img/bg-box1-top.png) no-repeat scroll center top transparent;
+    margin: 0 auto 15px;
+    padding: 135px 0 0;
+    position: relative;
+    width: 739px;
+}
+
+.box1-middle h3 {
+    color: #8A0000;
+    font-size: 40px;
+    line-height: 40px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.box1-bottom {
+    background: url(../img/bg-box1-bottom.png) no-repeat scroll center bottom transparent;
+    margin: 0 auto;
+    padding: 0 0 86px;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-light .navigation-list .navbar-nav .nav-link {
+        font-size: 15px;
+        padding: 10px 10px;
+    }
 }
